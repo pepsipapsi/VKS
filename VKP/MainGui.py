@@ -1,7 +1,7 @@
 import os
 import pygame
 import pygame_gui
-from allFields import *
+from settings import *
 from pdf_form import *
 from pdf_form import pdfRun
 import tkinter as tk
@@ -73,7 +73,7 @@ while is_running:
         window_surface.fill((255, 0, 255), (point, (1, 1)))
         t += 0.0001
 
-    # manager.update(time_delta)
-    # manager.draw_ui(window_surface)
-    window_surface.blit(screen, (1000, 0))  # <-- The actual "box"
+    manager.update(time_delta)
+    manager.draw_ui(window_surface)
+    # window_surface.blit(screen, (1000, 0))  # <-- The actual "box"
     pygame.display.update()

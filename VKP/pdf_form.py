@@ -1,6 +1,6 @@
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject, BooleanObject, IndirectObject
-from allFields import *
+from settings import *
 
 
 input_file = "nexans_doc.pdf"
