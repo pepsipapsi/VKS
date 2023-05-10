@@ -17,6 +17,7 @@ class Simulation:
 5. in-built pygame clock function (for delta time and ticks)
 6. Getting access to the View.py as self.view
 
+Next is the main "program" loop. This is to make things easier in the long run (render-wise). This will be the foundation of how the program will function at its core. 
 ```python
 def run(self):
         while True:

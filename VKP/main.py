@@ -22,10 +22,12 @@ class Simulation:
                     pygame.quit()
                     sys.exit()
                 if event.type == pygame_gui.UI_BUTTON_PRESSED:
-                    if event.ui_element == self.view.checkB1:
+                    if event.ui_element == self.view.export_button:
                         self.view.setPdf()
                 self.view.manager.process_events(event)
             dt = self.clock.tick() / 1000
+            
+            
             self.view.run(dt)
             self.view.manager.update(dt)
             self.view.manager.draw_ui(self.screen)
