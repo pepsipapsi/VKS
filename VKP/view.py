@@ -5,6 +5,7 @@ from pdf_form import *
 from pdf_form import pdfRun
 from vks import VKS
 from vktext import VKText
+from menu import Menu
 
 
 class View:
@@ -13,7 +14,7 @@ class View:
         self.display_surface = pygame.display.get_surface()
         self.manager = pygame_gui.UIManager((WINDOW_WIDTH, WINDOW_HEIGHT))
         self.base_font = pygame.font.Font(None, 32)
-        self.user_text = 'Hello World'
+        self.user_text = 'Halla Balla'
         self.export_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((0, 0), (checkW, checkH)),
                                                     text='Export',
                                                     manager=self.manager)
@@ -23,7 +24,6 @@ class View:
         self.vk_simulation = VKS((300, 400), self.all_sprites)
         self.vk_simulation = VKS((400, 400), self.all_sprites)
         self.vk_simulation = VKS((400, 300), self.all_sprites)
-        # self.vk_text = VKText((100, 100), None, "eipwjf", self.display_surface)
 
     def setPdf(self):
         writerUpdate(0, pdf_writer, Typebetegnelse, "Test123")

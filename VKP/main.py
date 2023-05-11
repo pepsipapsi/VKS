@@ -24,6 +24,8 @@ class Simulation:
                 if event.type == pygame_gui.UI_BUTTON_PRESSED:
                     if event.ui_element == self.view.export_button:
                         self.view.setPdf()
+                if event.type == pygame.KEYDOWN:
+                    pass
                 self.view.manager.process_events(event)
             dt = self.clock.tick() / 1000
             

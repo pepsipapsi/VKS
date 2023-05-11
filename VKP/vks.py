@@ -1,7 +1,7 @@
 import pygame
 import pygame_gui
 from settings import *
-
+# PLAYER
 
 class VKS(pygame.sprite.Sprite):
     def __init__(self, pos, group):
